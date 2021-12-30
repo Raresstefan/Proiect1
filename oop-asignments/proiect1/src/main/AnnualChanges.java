@@ -7,7 +7,7 @@ import java.util.List;
 public class AnnualChanges {
     private int newSantaBudget;
     private List<Gift> newGifts;
-    private List<Child> newChildren;
+    private List<ChildInput> newChildren;
     private List<ChildUpdate> childrenUpdates;
 
     public int getNewSantaBudget() {
@@ -18,7 +18,7 @@ public class AnnualChanges {
         return newGifts;
     }
 
-    public List<Child> getNewChildren() {
+    public List<ChildInput> getNewChildren() {
         return newChildren;
     }
 

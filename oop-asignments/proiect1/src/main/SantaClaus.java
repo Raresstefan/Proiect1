@@ -42,12 +42,43 @@ public class SantaClaus {
         }
         return null;
     }
-
     public static SantaClaus getInstance() {
         if(instance == null) {
             instance = new SantaClaus();
         }
         return instance;
+    }
+    public void removeAllYoungAdults() {
+        for (ChildInput childInput : this.children) {
+            if (childInput.getAge() > 18) {
+                this.children.remove(childInput);
+            }
+        }
+    }
+    public ChildInput childExistsById(final int id) {
+        for (ChildInput childInput : this.children) {
+            if (childInput.getId() == id) {
+                return childInput;
+            }
+        }
+        return null;
+    }
+    public void addNewGifts(final List<Gift> newGifts) {
+        
+    }
+    public void updateChild(final List<ChildUpdate> updates) {
+        for (ChildUpdate update : updates) {
+            int id = update.getId();
+            Double niceScore = update.getNiceScore();
+            List<Category> giftsPreferences = update.getGiftsPreferences();
+            // verific daca exista in lista copilul cu id-ul dat
+            ChildInput childExists = childExistsById(update.getId());
+            if (childExists != null) {
+                childExists.update(update);
+            }
+            // add new gifts
+
+        }
     }
     public void sortGiftsByPrice() {
         int i, j;

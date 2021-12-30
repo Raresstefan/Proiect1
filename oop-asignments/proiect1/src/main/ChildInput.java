@@ -69,6 +69,20 @@ public class ChildInput {
         return niceScore;
     }
 
+    public void incrementAge() {
+        this.age++;
+    }
+    public void update(ChildUpdate childUpdate) {
+        // add niceScore to history if it's not null
+        if (childUpdate.getNiceScore() != null) {
+            this.scores.add(childUpdate.getNiceScore());
+            this.niceScore = childUpdate.getNiceScore();
+        }
+        // add new preferences
+        for (Category category : childUpdate.getGiftsPreferences()) {
+            this.giftsPreferences.add(0, category);
+        }
+    }
     public void allocateGiftFromSanta(SantaClaus santaClaus) {
         Double theBudget = this.budgetAllocated;
             for (Category category : this.giftsPreferences) {
