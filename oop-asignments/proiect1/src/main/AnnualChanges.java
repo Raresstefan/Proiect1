@@ -3,7 +3,7 @@ package main;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
-@JsonIgnoreProperties({ "newChildren"})
+//@JsonIgnoreProperties({ "newChildren"})
 public class AnnualChanges {
     private int newSantaBudget;
     private List<Gift> newGifts;

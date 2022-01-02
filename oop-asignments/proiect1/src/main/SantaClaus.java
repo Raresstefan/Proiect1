@@ -48,13 +48,6 @@ public class SantaClaus {
         }
         return instance;
     }
-    public void removeAllYoungAdults() {
-        for (ChildInput childInput : this.children) {
-            if (childInput.getAge() > 18) {
-                this.children.remove(childInput);
-            }
-        }
-    }
     public ChildInput childExistsById(final int id) {
         for (ChildInput childInput : this.children) {
             if (childInput.getId() == id) {
@@ -64,20 +57,31 @@ public class SantaClaus {
         return null;
     }
     public void addNewGifts(final List<Gift> newGifts) {
-        
+        for (Gift gift : newGifts) {
+            this.gifts.add(gift);
+        }
     }
-    public void updateChild(final List<ChildUpdate> updates) {
+    public void removeYoungAdults() {
+        for (ChildInput childInput : this.children) {
+            if (childInput.getAge() > 18) {
+                this.children.remove(childInput);
+            }
+        }
+    }
+    public void updateChanges(final List<ChildUpdate> updates, final AnnualChanges annualChange) {
+        // set the new budget
+        setBudget(annualChange.getNewSantaBudget());
         for (ChildUpdate update : updates) {
-            int id = update.getId();
-            Double niceScore = update.getNiceScore();
-            List<Category> giftsPreferences = update.getGiftsPreferences();
             // verific daca exista in lista copilul cu id-ul dat
             ChildInput childExists = childExistsById(update.getId());
             if (childExists != null) {
                 childExists.update(update);
             }
             // add new gifts
-
+            addNewGifts(annualChange.getNewGifts());
+//            System.out.println(this.budget);
+            // remove all young adults children from the list
+            removeYoungAdults();
         }
     }
     public void sortGiftsByPrice() {

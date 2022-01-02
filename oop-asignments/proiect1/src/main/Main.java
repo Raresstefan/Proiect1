@@ -6,11 +6,11 @@ import com.fasterxml.jackson.databind.DeserializationConfig;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
+import common.Constants;
 import enums.AgeCategory;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -31,7 +31,7 @@ public final class Main {
         childOutput.setAssignedBudget(childInput.getBudgetAllocated());
         childOutput.setFirstName(childInput.getFirstName());
         childOutput.setLastName(childInput.getLastName());
-        childOutput.setGiftsPreference(childInput.getGiftsPreferences());
+        childOutput.setGiftsPreferences(childInput.getGiftsPreferences());
         childOutput.setId(childInput.getId());
         childOutput.setReceivedGifts(childInput.getReceivedGifts());
         childOutput.setNiceScoreHistory(childInput.getScores());
@@ -71,41 +71,19 @@ public final class Main {
             }
         }
     }
-    public static void changesForEachRound(final int numberOfYears, final List<ChildInput> children, final List<AnnualChanges> annualChanges, final SantaClaus santaClaus) {
-        for (AnnualChanges currAnualChange : annualChanges) {
-//            for (ChildUpdate childUpdate : annualChanges1.getChildrenUpdates()) {
-//                System.out.println(childUpdate.getGiftsPreferences());
-//            }
-            // adauga noii copii in lista de copii
-            addChildrenOnList(currAnualChange.getNewChildren(), santaClaus);
-
-        }
-//        for (int i = 0; i < numberOfYears; i++) {
-//            for (ChildInput childInput : children) {
-//                childInput.incrementAge();
-//            }
-//            AnnualChanges annualChanges1 = annualChanges.get(i);
-//            addChildrenOnList(annualChanges1.getNewChildren(), santaClaus);
-//            santaClaus.removeAllYoungAdults();
-//
-//        }
-    }
-    public static void writeOutput(final SantaClaus santaClaus) {
-        CompleteOutput completeOutput = new CompleteOutput();
-        for (ChildInput childInput : santaClaus.getChildren()) {
-                ChildOutput childOutput = setChildOutputValues(childInput);
-                completeOutput.addChildOutput(childOutput);
-//                extension = Integer.toString(i);
-//                extension = extension + ".json";
-//                testString = new String("test");
-//                testString = testString + extension;
-//                prefix = new String("out/");
-//                prefix = prefix + testString;
-//                objectMapper.writeValue(
-//                        new FileOutputStream(prefix), childOutput);
-        }
+    public static void writeOutput(final SantaClaus santaClaus, final AnnualChildren annualChildren, final int i) throws IOException {
         ObjectMapper objectMapperOutput = new ObjectMapper();
-
+        String extension = Integer.toString(i);
+        String dirName = new String("output");
+        File dir = new File(dirName);
+        if (!(dir.exists())) {
+            dir.mkdir();
+        }
+        BufferedWriter writer = new BufferedWriter(new FileWriter(Constants.OUTPUT_PATH + extension
+                + Constants.FILE_EXTENSION));
+        String json = objectMapperOutput.writerWithDefaultPrettyPrinter().writeValueAsString(annualChildren);
+        writer.write(json);
+        writer.close();
     }
     public static InputData readInput(final int i) throws IOException {
         String extension = Integer.toString(i);
@@ -119,7 +97,6 @@ public final class Main {
         objectMapper.setVisibility(VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
         File file = new File(prefix);
         InputData inputData = objectMapper.readValue(file, InputData.class);
-//        InputData inputData = objectMapper.readValue(file, InputData.class);
         return inputData;
     }
     public static void calculateBudget(final List<ChildInput> children, final SantaClaus santaClaus) {
@@ -143,6 +120,53 @@ public final class Main {
             childInput.setBudgetAllocated(budgetAllocated);
         }
     }
+    public static void addChildrenToOutput(final List<ChildInput> children, final AnnualChildren annualChildren) {
+        CompleteOutput completeOutput = new CompleteOutput();
+        for (ChildInput childInput : children) {
+            ChildOutput childOutput = setChildOutputValues(childInput);
+            completeOutput.addChildOutput(childOutput);
+        }
+        annualChildren.addChildToList(completeOutput);
+    }
+    public static void incrementAges(final List<ChildInput> children) {
+        for (ChildInput childInput : children) {
+            childInput.incrementAge();
+        }
+    }
+    public static void removeYoungAdults(final List<ChildInput> children) {
+        List <ChildInput> childrenToRemove = new ArrayList<>();
+        for (ChildInput childInput : children) {
+            if (childInput.getAge() > 18) {
+                childrenToRemove.add(childInput);
+            }
+        }
+        for (ChildInput childInput : childrenToRemove) {
+            children.remove(childInput);
+        }
+    }
+    public static void changesForEachRound(final List<AnnualChanges> annualChanges, final SantaClaus santaClaus, final AnnualChildren annualChildren, final int numberOfYears) {
+        for (AnnualChanges currAnualChange : annualChanges) {
+            // creste varsta copiilor
+            incrementAges(santaClaus.getChildren());
+            // elimina Young Adults din lista
+            removeYoungAdults(santaClaus.getChildren());
+            // adauga noii copii in lista de copii
+            if (currAnualChange.getNewChildren() != null) {
+                addChildrenOnList(currAnualChange.getNewChildren(), santaClaus);
+            }
+            // realizeaza modificarile cerute
+            santaClaus.updateChanges(currAnualChange.getChildrenUpdates(), currAnualChange);
+            // resorteaza copiii in functie de id
+            sortChildrenById(santaClaus.getChildren());
+            // recalculeaza averageScoreurile
+//            System.out.println(santaClaus.getBudget());
+            calculateBudget(santaClaus.getChildren(), santaClaus);
+            // realoca cadourile pentru copii
+            santaClaus.allocateGiftsForChildren();
+//            completeOutput.refreshList();
+            addChildrenToOutput(santaClaus.getChildren(), annualChildren);
+        }
+    }
     /**
      * This method is used to call the checker which calculates the score
      * @param args
@@ -155,6 +179,8 @@ public final class Main {
         for (i = 1; i <= 25; i++) {
             // citire
             InputData inputData = readInput(i);
+            AnnualChildren annualChildren = new AnnualChildren();
+//            CompleteOutput completeOutput = new CompleteOutput();
             // setari initiale
             SantaClaus santaClaus = SantaClaus.getInstance();
             santaClaus.initialiseParameters();
@@ -164,21 +190,14 @@ public final class Main {
             sortChildrenById(santaClaus.getChildren());
             calculateBudget(santaClaus.getChildren(), santaClaus);
             santaClaus.allocateGiftsForChildren();
-            changesForEachRound(inputData.getNumberOfYears(), santaClaus.getChildren(), inputData.getAnnualChanges(), santaClaus);
+            addChildrenToOutput(santaClaus.getChildren(), annualChildren);
+//            completeOutput.refreshList();
+            changesForEachRound(inputData.getAnnualChanges(), santaClaus, annualChildren, inputData.getNumberOfYears());
 
-            for (ChildInput childInput : santaClaus.getChildren()) {
-
-//                ObjectMapper objectMapperOutput = new ObjectMapper();
-//                ChildOutput childOutput = setChildOutputValues(childInput);
-//                extension = Integer.toString(i);
-//                extension = extension + ".json";
-//                testString = new String("test");
-//                testString = testString + extension;
-//                prefix = new String("out/");
-//                prefix = prefix + testString;
-//                objectMapper.writeValue(
-//                        new FileOutputStream(prefix), childOutput);
-            }
+//            for (CompleteOutput completeOutput1 : annualChildren.getAnnualChildren()) {
+//                System.out.println(completeOutput1.getChildren().get(0).getAssignedBudget());
+//            }
+            writeOutput(santaClaus, annualChildren, i);
         }
     }
 }

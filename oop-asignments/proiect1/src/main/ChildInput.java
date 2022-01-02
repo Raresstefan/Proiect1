@@ -91,8 +91,10 @@ public class ChildInput {
                 }
                 Gift gift = santaClaus.searchGiftByPreference(category);
                 if (gift != null) {
-                    receivedGifts.add(gift);
-                    theBudget -= gift.getPrice();
+                    if (!(receivedGifts.contains(gift))) {
+                        receivedGifts.add(gift);
+                        theBudget -= gift.getPrice();
+                    }
                 }
             }
     }

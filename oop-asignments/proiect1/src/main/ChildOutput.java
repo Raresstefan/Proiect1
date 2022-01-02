@@ -10,13 +10,19 @@ public class ChildOutput {
     private int id;
     private String lastName;
     private String firstName;
-    private int age;
     private Cities city;
-    private List<Category> giftsPreference;
-    private List<Double> niceScoreHistory = new ArrayList<>();
-    private Double assignedBudget;
-    private List<Gift> receivedGifts = new ArrayList<>();
+    private int age;
+    private List<Category> giftsPreferences;
     private Double averageScore;
+    private List<Double> niceScoreHistory;
+    private Double assignedBudget;
+    private List<Gift> receivedGifts;
+
+    public ChildOutput() {
+        this.giftsPreferences = new ArrayList<>();
+        this.niceScoreHistory = new ArrayList<>();
+        this.receivedGifts = new ArrayList<>();
+    }
 
     public void setId(int id) {
         this.id = id;
@@ -38,8 +44,8 @@ public class ChildOutput {
         this.city = city;
     }
 
-    public void setGiftsPreference(List<Category> giftsPreference) {
-        this.giftsPreference = giftsPreference;
+    public void setGiftsPreferences(List<Category> giftsPreference) {
+        this.giftsPreferences = giftsPreference;
     }
 
     public void setNiceScoreHistory(List<Double> niceScoreHistory) {
@@ -56,5 +62,44 @@ public class ChildOutput {
 
     public void setAverageScore(Double averageScore) {
         this.averageScore = averageScore;
+    }
+    public Double getAverageScore() {
+        return this.averageScore;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Cities getCity() {
+        return city;
+    }
+
+    public List<Category> getGiftsPreferences() {
+        return giftsPreferences;
+    }
+
+    public List<Double> getNiceScoreHistory() {
+        return niceScoreHistory;
+    }
+
+    public Double getAssignedBudget() {
+        return assignedBudget;
+    }
+
+    public List<Gift> getReceivedGifts() {
+        return receivedGifts;
     }
 }

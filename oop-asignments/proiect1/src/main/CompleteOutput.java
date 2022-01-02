@@ -4,16 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CompleteOutput {
-    private List<ChildOutput> childrenOutput;
+    private List<ChildOutput> children;
 
     public CompleteOutput() {
-        childrenOutput = new ArrayList<>();
+        this.children = new ArrayList<>();
     }
 
-    public List<ChildOutput> getChildrenOutput() {
-        return childrenOutput;
+    public void refreshList() {
+        children = new ArrayList<>();
     }
+
+    public List<ChildOutput> getChildren() {
+        return children;
+    }
+
     public void addChildOutput(final ChildOutput childOutput) {
-        this.childrenOutput.add(childOutput);
+        this.children.add(childOutput);
     }
 }

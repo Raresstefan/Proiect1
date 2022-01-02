@@ -30,4 +30,13 @@ public class Gift {
     public Category getCategory() {
         return category;
     }
+
+    @Override
+    public String toString() {
+        return "Gift{" +
+                "productName='" + productName + '\'' +
+                ", price=" + price +
+                ", category=" + category +
+                '}';
+    }
 }
