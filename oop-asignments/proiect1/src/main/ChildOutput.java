@@ -45,11 +45,13 @@ public class ChildOutput {
     }
 
     public void setGiftsPreferences(List<Category> giftsPreference) {
-        this.giftsPreferences = giftsPreference;
+        this.giftsPreferences.addAll(giftsPreference);
+//        this.giftsPreferences = giftsPreference;
     }
 
     public void setNiceScoreHistory(List<Double> niceScoreHistory) {
-        this.niceScoreHistory = niceScoreHistory;
+        this.niceScoreHistory.addAll(niceScoreHistory);
+//        this.niceScoreHistory = niceScoreHistory;
     }
 
     public void setAssignedBudget(Double assignedBudget) {
@@ -57,7 +59,8 @@ public class ChildOutput {
     }
 
     public void setReceivedGifts(List<Gift> receivedGifts) {
-        this.receivedGifts = receivedGifts;
+        this.receivedGifts.addAll(receivedGifts);
+//        this.receivedGifts = receivedGifts;
     }
 
     public void setAverageScore(Double averageScore) {

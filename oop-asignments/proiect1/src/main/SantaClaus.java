@@ -61,13 +61,6 @@ public class SantaClaus {
             this.gifts.add(gift);
         }
     }
-    public void removeYoungAdults() {
-        for (ChildInput childInput : this.children) {
-            if (childInput.getAge() > 18) {
-                this.children.remove(childInput);
-            }
-        }
-    }
     public void updateChanges(final List<ChildUpdate> updates, final AnnualChanges annualChange) {
         // set the new budget
         setBudget(annualChange.getNewSantaBudget());
@@ -81,7 +74,7 @@ public class SantaClaus {
             addNewGifts(annualChange.getNewGifts());
 //            System.out.println(this.budget);
             // remove all young adults children from the list
-            removeYoungAdults();
+//            removeYoungAdults();
         }
     }
     public void sortGiftsByPrice() {

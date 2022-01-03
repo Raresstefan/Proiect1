@@ -18,7 +18,7 @@ public class ChildInput {
     private List<Category> giftsPreferences;
     private List<Double> scores = new ArrayList<>();
     private Double budgetAllocated;
-    private List<Gift> receivedGifts = new ArrayList<>();
+    private List<Gift> receivedGifts;
     private Double averageScore;
 
     public void setAverageScore(Double averageScore) {
@@ -79,24 +79,41 @@ public class ChildInput {
             this.niceScore = childUpdate.getNiceScore();
         }
         // add new preferences
-        for (Category category : childUpdate.getGiftsPreferences()) {
-            this.giftsPreferences.add(0, category);
+        int length = childUpdate.getGiftsPreferences().size() - 1;
+        for (int i = length; i >= 0; i--) {
+            Category category = childUpdate.getGiftsPreferences().get(i);
+            if (!(this.giftsPreferences.contains(category))) {
+                this.giftsPreferences.add(0, category);
+            } else {
+                this.giftsPreferences.remove(category);
+                this.giftsPreferences.add(0, category);
+            }
         }
+//        for (Category category : childUpdate.getGiftsPreferences()) {
+//            if (!(this.giftsPreferences.contains(category))) {
+//                this.giftsPreferences.add(0, category);
+//            } else {
+//                this.giftsPreferences.remove(category);
+//                this.giftsPreferences.add(0, category);
+//            }
+//        }
     }
     public void allocateGiftFromSanta(SantaClaus santaClaus) {
+        this.receivedGifts = new ArrayList<>();
         Double theBudget = this.budgetAllocated;
             for (Category category : this.giftsPreferences) {
-                if (theBudget <= 0.0) {
-                    break;
-                }
                 Gift gift = santaClaus.searchGiftByPreference(category);
                 if (gift != null) {
-                    if (!(receivedGifts.contains(gift))) {
+//                    if (theBudget - gift.getPrice() <= 0.0) {
+//                        break;
+//                    }
+                    if (!(receivedGifts.contains(gift)) && (theBudget - gift.getPrice()) > 0.0) {
                         receivedGifts.add(gift);
                         theBudget -= gift.getPrice();
                     }
                 }
             }
+//        System.out.println(receivedGifts);
     }
     public List<Category> getGifts() {
         return giftsPreferences;

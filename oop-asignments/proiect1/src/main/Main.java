@@ -118,6 +118,7 @@ public final class Main {
                 budgetAllocated = childInput.getAverageScore() * budgetUnit;
             }
             childInput.setBudgetAllocated(budgetAllocated);
+
         }
     }
     public static void addChildrenToOutput(final List<ChildInput> children, final AnnualChildren annualChildren) {
@@ -126,7 +127,8 @@ public final class Main {
             ChildOutput childOutput = setChildOutputValues(childInput);
             completeOutput.addChildOutput(childOutput);
         }
-        annualChildren.addChildToList(completeOutput);
+//        annualChildren.addChildToList(completeOutput);
+        annualChildren.getAnnualChildren().add(completeOutput);
     }
     public static void incrementAges(final List<ChildInput> children) {
         for (ChildInput childInput : children) {
@@ -145,7 +147,12 @@ public final class Main {
         }
     }
     public static void changesForEachRound(final List<AnnualChanges> annualChanges, final SantaClaus santaClaus, final AnnualChildren annualChildren, final int numberOfYears) {
+        int cnt = 1;
         for (AnnualChanges currAnualChange : annualChanges) {
+            if (cnt > numberOfYears) {
+                break;
+            }
+            cnt++;
             // creste varsta copiilor
             incrementAges(santaClaus.getChildren());
             // elimina Young Adults din lista
@@ -154,17 +161,24 @@ public final class Main {
             if (currAnualChange.getNewChildren() != null) {
                 addChildrenOnList(currAnualChange.getNewChildren(), santaClaus);
             }
+
             // realizeaza modificarile cerute
+
             santaClaus.updateChanges(currAnualChange.getChildrenUpdates(), currAnualChange);
+//            if (i == 7) {
+//                for (CompleteOutput completeOutput : annualChildren.getAnnualChildren()) {
+//                    System.out.println(completeOutput.getChildren().get(0).getNiceScoreHistory());
+//                }
+//            }
             // resorteaza copiii in functie de id
             sortChildrenById(santaClaus.getChildren());
             // recalculeaza averageScoreurile
-//            System.out.println(santaClaus.getBudget());
             calculateBudget(santaClaus.getChildren(), santaClaus);
             // realoca cadourile pentru copii
             santaClaus.allocateGiftsForChildren();
-//            completeOutput.refreshList();
+
             addChildrenToOutput(santaClaus.getChildren(), annualChildren);
+
         }
     }
     /**
@@ -180,7 +194,6 @@ public final class Main {
             // citire
             InputData inputData = readInput(i);
             AnnualChildren annualChildren = new AnnualChildren();
-//            CompleteOutput completeOutput = new CompleteOutput();
             // setari initiale
             SantaClaus santaClaus = SantaClaus.getInstance();
             santaClaus.initialiseParameters();
@@ -190,12 +203,25 @@ public final class Main {
             sortChildrenById(santaClaus.getChildren());
             calculateBudget(santaClaus.getChildren(), santaClaus);
             santaClaus.allocateGiftsForChildren();
+            if (i == 8) {
+                System.out.println(santaClaus.getChildren().get(0).getReceivedGifts());
+            }
             addChildrenToOutput(santaClaus.getChildren(), annualChildren);
-//            completeOutput.refreshList();
+//            if (i == 7) {
+//                for (CompleteOutput completeOutput : annualChildren.getAnnualChildren()) {
+//                    for (ChildOutput childOutput : completeOutput.getChildren()) {
+//                        System.out.println(childOutput.getNiceScoreHistory());
+//                    }
+//                }
+//            }
             changesForEachRound(inputData.getAnnualChanges(), santaClaus, annualChildren, inputData.getNumberOfYears());
-
-//            for (CompleteOutput completeOutput1 : annualChildren.getAnnualChildren()) {
-//                System.out.println(completeOutput1.getChildren().get(0).getAssignedBudget());
+//            if (i == 7) {
+//                System.out.println("After:");
+//                for (CompleteOutput completeOutput : annualChildren.getAnnualChildren()) {
+//                    for (ChildOutput childOutput : completeOutput.getChildren()) {
+//                        System.out.println(childOutput.getNiceScoreHistory());
+//                    }
+//                }
 //            }
             writeOutput(santaClaus, annualChildren, i);
         }
