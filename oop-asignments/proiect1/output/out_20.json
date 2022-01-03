@@ -8,7 +8,7 @@
       "age" : 13,
       "giftsPreferences" : [ "Board Games", "Books" ],
       "averageScore" : 2.0,
-      "niceScoreHistory" : [ 2.0, 4.0 ],
+      "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 68.74285714285715,
       "receivedGifts" : [ {
         "productName" : "Uno",
@@ -33,10 +33,6 @@
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 2,
@@ -44,9 +40,9 @@
       "firstName" : "Matei",
       "city" : "Braila",
       "age" : 4,
-      "giftsPreferences" : [ "Clothes", "Clothes", "Sweets" ],
+      "giftsPreferences" : [ "Clothes", "Sweets" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 4.0, 8.0 ],
+      "niceScoreHistory" : [ 4.0 ],
       "assignedBudget" : 343.7142857142857,
       "receivedGifts" : [ {
         "productName" : "Dress",
@@ -71,10 +67,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 4,
@@ -94,10 +86,6 @@
         "productName" : "Bag of Candy",
         "price" : 20.0,
         "category" : "Sweets"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     } ]
   }, {
@@ -134,10 +122,6 @@
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 2,
@@ -145,7 +129,7 @@
       "firstName" : "Matei",
       "city" : "Braila",
       "age" : 5,
-      "giftsPreferences" : [ "Clothes", "Clothes", "Sweets" ],
+      "giftsPreferences" : [ "Clothes", "Sweets" ],
       "averageScore" : 6.0,
       "niceScoreHistory" : [ 4.0, 8.0 ],
       "assignedBudget" : 169.83529411764704,
@@ -172,10 +156,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     } ]
   }, {
@@ -204,7 +184,7 @@
       "firstName" : "Matei",
       "city" : "Braila",
       "age" : 6,
-      "giftsPreferences" : [ "Clothes", "Clothes", "Sweets" ],
+      "giftsPreferences" : [ "Clothes", "Sweets" ],
       "averageScore" : 6.0,
       "niceScoreHistory" : [ 4.0, 8.0 ],
       "assignedBudget" : 246.0681818181818,
@@ -231,10 +211,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 6,
@@ -242,7 +218,7 @@
       "firstName" : "Diana",
       "city" : "Constanta",
       "age" : 6,
-      "giftsPreferences" : [ "Toys", "Sweets", "Clothes" ],
+      "giftsPreferences" : [ "Clothes" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 410.1136363636363,
@@ -250,14 +226,6 @@
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
-      }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Bag of Candy",
-        "price" : 20.0,
-        "category" : "Sweets"
       } ]
     } ]
   }, {
@@ -286,7 +254,7 @@
       "firstName" : "Matei",
       "city" : "Braila",
       "age" : 7,
-      "giftsPreferences" : [ "Clothes", "Clothes", "Sweets" ],
+      "giftsPreferences" : [ "Clothes", "Sweets" ],
       "averageScore" : 6.0,
       "niceScoreHistory" : [ 4.0, 8.0 ],
       "assignedBudget" : 246.0681818181818,
@@ -313,10 +281,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 6,
@@ -324,22 +288,22 @@
       "firstName" : "Diana",
       "city" : "Constanta",
       "age" : 7,
-      "giftsPreferences" : [ "Toys", "Sweets", "Clothes" ],
+      "giftsPreferences" : [ "Sweets", "Toys", "Clothes" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 410.1136363636363,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
+        "productName" : "Bag of Candy",
+        "price" : 20.0,
+        "category" : "Sweets"
       }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
       }, {
-        "productName" : "Bag of Candy",
-        "price" : 20.0,
-        "category" : "Sweets"
+        "productName" : "Dress",
+        "price" : 45.0,
+        "category" : "Clothes"
       } ]
     } ]
   }, {
@@ -368,7 +332,7 @@
       "firstName" : "Matei",
       "city" : "Braila",
       "age" : 8,
-      "giftsPreferences" : [ "Clothes", "Clothes", "Sweets" ],
+      "giftsPreferences" : [ "Clothes", "Sweets" ],
       "averageScore" : 6.0,
       "niceScoreHistory" : [ 4.0, 8.0 ],
       "assignedBudget" : 183.50847457627117,
@@ -395,10 +359,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 6,
@@ -406,22 +366,22 @@
       "firstName" : "Diana",
       "city" : "Constanta",
       "age" : 8,
-      "giftsPreferences" : [ "Toys", "Sweets", "Clothes" ],
+      "giftsPreferences" : [ "Sweets", "Toys", "Clothes" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 305.8474576271186,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
+        "productName" : "Bag of Candy",
+        "price" : 20.0,
+        "category" : "Sweets"
       }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
       }, {
-        "productName" : "Bag of Candy",
-        "price" : 20.0,
-        "category" : "Sweets"
+        "productName" : "Dress",
+        "price" : 45.0,
+        "category" : "Clothes"
       } ]
     }, {
       "id" : 7,
@@ -477,7 +437,7 @@
       "firstName" : "Matei",
       "city" : "Braila",
       "age" : 9,
-      "giftsPreferences" : [ "Clothes", "Clothes", "Sweets" ],
+      "giftsPreferences" : [ "Clothes", "Sweets" ],
       "averageScore" : 6.0,
       "niceScoreHistory" : [ 4.0, 8.0 ],
       "assignedBudget" : 146.3108108108108,
@@ -504,10 +464,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 6,
@@ -515,22 +471,22 @@
       "firstName" : "Diana",
       "city" : "Constanta",
       "age" : 9,
-      "giftsPreferences" : [ "Toys", "Sweets", "Clothes" ],
+      "giftsPreferences" : [ "Sweets", "Toys", "Clothes" ],
       "averageScore" : 10.0,
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 243.85135135135133,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
+        "productName" : "Bag of Candy",
+        "price" : 20.0,
+        "category" : "Sweets"
       }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
       }, {
-        "productName" : "Bag of Candy",
-        "price" : 20.0,
-        "category" : "Sweets"
+        "productName" : "Dress",
+        "price" : 45.0,
+        "category" : "Clothes"
       } ]
     }, {
       "id" : 7,
@@ -573,10 +529,6 @@
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
-      }, {
-        "productName" : "Iphone",
-        "price" : 700.0,
-        "category" : "Technology"
       } ]
     } ]
   } ]

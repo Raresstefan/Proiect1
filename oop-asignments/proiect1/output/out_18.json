@@ -6,9 +6,9 @@
       "firstName" : "Miruna",
       "city" : "Cluj-Napoca",
       "age" : 5,
-      "giftsPreferences" : [ "Toys", "Board Games", "Books", "Toys", "Board Games", "Clothes" ],
+      "giftsPreferences" : [ "Toys", "Board Games", "Clothes" ],
       "averageScore" : 3.0,
-      "niceScoreHistory" : [ 3.0, 5.0 ],
+      "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 216.46153846153848,
       "receivedGifts" : [ {
         "productName" : "Castle",
@@ -18,14 +18,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 1,
@@ -58,26 +50,14 @@
       "firstName" : "Miruna",
       "city" : "Cluj-Napoca",
       "age" : 6,
-      "giftsPreferences" : [ "Toys", "Board Games", "Books", "Toys", "Board Games", "Clothes" ],
+      "giftsPreferences" : [ "Toys", "Board Games", "Clothes" ],
       "averageScore" : 3.0,
-      "niceScoreHistory" : [ 3.0, 5.0 ],
+      "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 46.6875,
       "receivedGifts" : [ {
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Puzzle",
-        "price" : 50.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 2,
@@ -97,10 +77,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 3,
@@ -108,9 +84,9 @@
       "firstName" : "Maria",
       "city" : "Brasov",
       "age" : 13,
-      "giftsPreferences" : [ "Board Games", "Clothes", "Toys", "Technology", "Clothes", "Toys", "Board Games", "Toys", "Board Games", "Technology" ],
+      "giftsPreferences" : [ "Toys", "Board Games", "Technology" ],
       "averageScore" : 6.0,
-      "niceScoreHistory" : [ 6.0, 3.0 ],
+      "niceScoreHistory" : [ 6.0 ],
       "assignedBudget" : 93.375,
       "receivedGifts" : [ {
         "productName" : "Castle",
@@ -120,14 +96,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
       } ]
     } ]
   }, {
@@ -137,9 +105,9 @@
       "firstName" : "Miruna",
       "city" : "Cluj-Napoca",
       "age" : 7,
-      "giftsPreferences" : [ "Toys", "Board Games", "Books", "Toys", "Board Games", "Clothes" ],
+      "giftsPreferences" : [ "Toys", "Board Games", "Clothes" ],
       "averageScore" : 3.0,
-      "niceScoreHistory" : [ 3.0, 5.0 ],
+      "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 100.5,
       "receivedGifts" : [ {
         "productName" : "Castle",
@@ -149,14 +117,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 2,
@@ -176,10 +136,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 3,
@@ -187,26 +143,18 @@
       "firstName" : "Maria",
       "city" : "Brasov",
       "age" : 14,
-      "giftsPreferences" : [ "Board Games", "Clothes", "Toys", "Technology", "Clothes", "Toys", "Board Games", "Toys", "Board Games", "Technology" ],
+      "giftsPreferences" : [ "Board Games", "Toys", "Clothes", "Technology" ],
       "averageScore" : 6.0,
-      "niceScoreHistory" : [ 6.0, 3.0 ],
+      "niceScoreHistory" : [ 6.0 ],
       "assignedBudget" : 201.0,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      }, {
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
       }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
+        "productName" : "Castle",
+        "price" : 15.0,
+        "category" : "Toys"
       } ]
     }, {
       "id" : 4,
@@ -245,10 +193,6 @@
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
       } ]
     } ]
   }, {
@@ -258,26 +202,22 @@
       "firstName" : "Miruna",
       "city" : "Cluj-Napoca",
       "age" : 8,
-      "giftsPreferences" : [ "Toys", "Board Games", "Books", "Toys", "Board Games", "Clothes" ],
+      "giftsPreferences" : [ "Books", "Board Games", "Toys", "Clothes" ],
       "averageScore" : 4.0,
       "niceScoreHistory" : [ 3.0, 5.0 ],
       "assignedBudget" : 138.96296296296296,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
+        "productName" : "Diary of a Wimpy Kid",
+        "price" : 25.0,
+        "category" : "Books"
       }, {
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
       }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
+        "productName" : "Castle",
+        "price" : 15.0,
+        "category" : "Toys"
       } ]
     }, {
       "id" : 2,
@@ -297,10 +237,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 3,
@@ -308,7 +244,7 @@
       "firstName" : "Maria",
       "city" : "Brasov",
       "age" : 15,
-      "giftsPreferences" : [ "Board Games", "Clothes", "Toys", "Technology", "Clothes", "Toys", "Board Games", "Toys", "Board Games", "Technology" ],
+      "giftsPreferences" : [ "Technology", "Toys", "Clothes", "Board Games" ],
       "averageScore" : 4.0,
       "niceScoreHistory" : [ 6.0, 3.0 ],
       "assignedBudget" : 138.96296296296296,
@@ -320,14 +256,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 4,
@@ -347,10 +275,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 5,
@@ -366,10 +290,6 @@
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 6,
@@ -385,10 +305,6 @@
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       } ]
     } ]
   }, {
@@ -398,26 +314,22 @@
       "firstName" : "Miruna",
       "city" : "Cluj-Napoca",
       "age" : 9,
-      "giftsPreferences" : [ "Toys", "Board Games", "Books", "Toys", "Board Games", "Clothes" ],
+      "giftsPreferences" : [ "Books", "Board Games", "Toys", "Clothes" ],
       "averageScore" : 4.0,
       "niceScoreHistory" : [ 3.0, 5.0 ],
       "assignedBudget" : 214.8148148148148,
       "receivedGifts" : [ {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
+        "productName" : "Diary of a Wimpy Kid",
+        "price" : 25.0,
+        "category" : "Books"
       }, {
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
       }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
+        "productName" : "Castle",
+        "price" : 15.0,
+        "category" : "Toys"
       } ]
     }, {
       "id" : 2,
@@ -437,10 +349,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       } ]
     }, {
       "id" : 3,
@@ -448,7 +356,7 @@
       "firstName" : "Maria",
       "city" : "Brasov",
       "age" : 16,
-      "giftsPreferences" : [ "Board Games", "Clothes", "Toys", "Technology", "Clothes", "Toys", "Board Games", "Toys", "Board Games", "Technology" ],
+      "giftsPreferences" : [ "Technology", "Toys", "Clothes", "Board Games" ],
       "averageScore" : 4.0,
       "niceScoreHistory" : [ 6.0, 3.0 ],
       "assignedBudget" : 214.8148148148148,
@@ -460,14 +368,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 4,
@@ -487,10 +387,6 @@
         "productName" : "Puzzle",
         "price" : 50.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 5,
@@ -506,10 +402,6 @@
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Handbag",
-        "price" : 200.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 6,
@@ -525,10 +417,6 @@
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       } ]
     } ]
   } ]

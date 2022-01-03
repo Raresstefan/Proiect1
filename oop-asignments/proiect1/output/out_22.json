@@ -52,9 +52,9 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 4,
-      "giftsPreferences" : [ "Toys", "Sweets", "Technology", "Technology", "Board Games" ],
+      "giftsPreferences" : [ "Technology", "Board Games" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 8.0, 7.0 ],
+      "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 271.8181818181818,
       "receivedGifts" : [ {
         "productName" : "Headphones",
@@ -64,14 +64,6 @@
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 3,
@@ -145,10 +137,6 @@
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -183,10 +171,6 @@
       "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 54.36363636363637,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
@@ -194,10 +178,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     } ]
   }, {
@@ -253,9 +233,9 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 5,
-      "giftsPreferences" : [ "Toys", "Sweets", "Technology", "Technology", "Board Games" ],
+      "giftsPreferences" : [ "Technology", "Board Games" ],
       "averageScore" : 8.0,
-      "niceScoreHistory" : [ 8.0, 7.0 ],
+      "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 208.0,
       "receivedGifts" : [ {
         "productName" : "Headphones",
@@ -265,14 +245,6 @@
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 3,
@@ -346,10 +318,6 @@
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -384,10 +352,6 @@
       "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 52.0,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
@@ -395,10 +359,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 10,
@@ -477,7 +437,7 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 6,
-      "giftsPreferences" : [ "Toys", "Sweets", "Technology", "Technology", "Board Games" ],
+      "giftsPreferences" : [ "Technology", "Sweets", "Toys", "Board Games" ],
       "averageScore" : 7.5,
       "niceScoreHistory" : [ 8.0, 7.0 ],
       "assignedBudget" : 230.0,
@@ -486,17 +446,17 @@
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Uno",
+        "productName" : "Gummy Bears",
         "price" : 10.0,
-        "category" : "Board Games"
+        "category" : "Sweets"
       }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
       }, {
-        "productName" : "Gummy Bears",
+        "productName" : "Uno",
         "price" : 10.0,
-        "category" : "Sweets"
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 3,
@@ -554,10 +514,6 @@
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 8,
@@ -589,10 +545,6 @@
       "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 61.333333333333336,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
@@ -664,10 +616,6 @@
         "price" : 10.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
@@ -682,26 +630,22 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 7,
-      "giftsPreferences" : [ "Toys", "Sweets", "Technology", "Technology", "Board Games" ],
+      "giftsPreferences" : [ "Technology", "Sweets", "Toys", "Board Games" ],
       "averageScore" : 7.5,
       "niceScoreHistory" : [ 8.0, 7.0 ],
       "assignedBudget" : 68.88888888888889,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Uno",
+        "productName" : "Gummy Bears",
         "price" : 10.0,
-        "category" : "Board Games"
+        "category" : "Sweets"
       }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
       }, {
-        "productName" : "Gummy Bears",
+        "productName" : "Uno",
         "price" : 10.0,
-        "category" : "Sweets"
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 3,
@@ -752,17 +696,9 @@
       "niceScoreHistory" : [ 5.0 ],
       "assignedBudget" : 45.925925925925924,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Dress",
         "price" : 45.0,
         "category" : "Clothes"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 8,
@@ -775,10 +711,6 @@
       "niceScoreHistory" : [ 5.0 ],
       "assignedBudget" : 45.925925925925924,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -794,14 +726,6 @@
       "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 18.37037037037037,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -821,10 +745,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 91.85185185185185,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
@@ -903,17 +823,9 @@
         "price" : 10.0,
         "category" : "Sweets"
       }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
       } ]
     }, {
       "id" : 2,
@@ -921,26 +833,22 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 8,
-      "giftsPreferences" : [ "Toys", "Sweets", "Technology", "Technology", "Board Games" ],
+      "giftsPreferences" : [ "Technology", "Sweets", "Toys", "Board Games" ],
       "averageScore" : 7.5,
       "niceScoreHistory" : [ 8.0, 7.0 ],
       "assignedBudget" : 46.22222222222222,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Uno",
+        "productName" : "Gummy Bears",
         "price" : 10.0,
-        "category" : "Board Games"
+        "category" : "Sweets"
       }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
       }, {
-        "productName" : "Gummy Bears",
+        "productName" : "Uno",
         "price" : 10.0,
-        "category" : "Sweets"
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 3,
@@ -991,14 +899,6 @@
       "niceScoreHistory" : [ 5.0 ],
       "assignedBudget" : 30.814814814814817,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -1014,10 +914,6 @@
       "niceScoreHistory" : [ 5.0 ],
       "assignedBudget" : 30.814814814814817,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -1033,21 +929,9 @@
       "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 12.325925925925926,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 10,
@@ -1060,10 +944,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 61.62962962962963,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
@@ -1114,7 +994,7 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 9,
-      "giftsPreferences" : [ "Toys", "Sweets", "Technology", "Technology", "Board Games" ],
+      "giftsPreferences" : [ "Technology", "Sweets", "Toys", "Board Games" ],
       "averageScore" : 7.5,
       "niceScoreHistory" : [ 8.0, 7.0 ],
       "assignedBudget" : 109.00763358778626,
@@ -1123,17 +1003,9 @@
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Gummy Bears",
-        "price" : 10.0,
-        "category" : "Sweets"
       } ]
     }, {
       "id" : 3,
@@ -1184,10 +1056,6 @@
       "niceScoreHistory" : [ 5.0 ],
       "assignedBudget" : 72.67175572519083,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"

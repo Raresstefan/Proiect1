@@ -36,26 +36,18 @@
       "firstName" : "Miruna",
       "city" : "Timisoara",
       "age" : 16,
-      "giftsPreferences" : [ "Toys", "Toys", "Technology", "Board Games", "Sweets" ],
+      "giftsPreferences" : [ "Technology", "Board Games", "Sweets" ],
       "averageScore" : 9.0,
-      "niceScoreHistory" : [ 9.0, 2.0 ],
+      "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 124.9090909090909,
       "receivedGifts" : [ {
         "productName" : "Headphones",
         "price" : 100.0,
         "category" : "Technology"
       }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
-        "category" : "Board Games"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
-      }, {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
       } ]
     }, {
       "id" : 3,
@@ -133,9 +125,9 @@
       "firstName" : "Miruna",
       "city" : "Timisoara",
       "age" : 17,
-      "giftsPreferences" : [ "Toys", "Toys", "Technology", "Board Games", "Sweets" ],
+      "giftsPreferences" : [ "Technology", "Board Games", "Sweets" ],
       "averageScore" : 9.0,
-      "niceScoreHistory" : [ 9.0, 2.0 ],
+      "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 206.58139534883722,
       "receivedGifts" : [ {
         "productName" : "Headphones",
@@ -149,10 +141,6 @@
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
-      }, {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
       } ]
     }, {
       "id" : 3,
@@ -198,18 +186,14 @@
       "firstName" : "Mihai",
       "city" : "Craiova",
       "age" : 4,
-      "giftsPreferences" : [ "Board Games", "Toys" ],
+      "giftsPreferences" : [ "Toys" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 8.0, 9.0 ],
+      "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 229.53488372093022,
       "receivedGifts" : [ {
         "productName" : "Car",
         "price" : 20.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
-        "category" : "Board Games"
       } ]
     } ]
   }, {
@@ -249,26 +233,18 @@
       "firstName" : "Miruna",
       "city" : "Timisoara",
       "age" : 18,
-      "giftsPreferences" : [ "Toys", "Toys", "Technology", "Board Games", "Sweets" ],
+      "giftsPreferences" : [ "Toys", "Technology", "Board Games", "Sweets" ],
       "averageScore" : 4.333333333333333,
       "niceScoreHistory" : [ 9.0, 2.0 ],
       "assignedBudget" : 45.738219895287955,
       "receivedGifts" : [ {
-        "productName" : "Headphones",
-        "price" : 100.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Monopoly",
-        "price" : 30.0,
-        "category" : "Board Games"
+        "productName" : "Car",
+        "price" : 20.0,
+        "category" : "Toys"
       }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
-      }, {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
       } ]
     }, {
       "id" : 4,
@@ -300,13 +276,13 @@
       "niceScoreHistory" : [ 8.0, 9.0 ],
       "assignedBudget" : 89.717277486911,
       "receivedGifts" : [ {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
-      }, {
         "productName" : "Monopoly",
         "price" : 30.0,
         "category" : "Board Games"
+      }, {
+        "productName" : "Car",
+        "price" : 20.0,
+        "category" : "Toys"
       } ]
     } ]
   }, {
@@ -370,13 +346,13 @@
       "niceScoreHistory" : [ 8.0, 9.0 ],
       "assignedBudget" : 301.98181818181814,
       "receivedGifts" : [ {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
-      }, {
         "productName" : "Monopoly",
         "price" : 30.0,
         "category" : "Board Games"
+      }, {
+        "productName" : "Car",
+        "price" : 20.0,
+        "category" : "Toys"
       } ]
     } ]
   }, {
@@ -440,13 +416,13 @@
       "niceScoreHistory" : [ 8.0, 9.0 ],
       "assignedBudget" : 116.21818181818182,
       "receivedGifts" : [ {
-        "productName" : "Car",
-        "price" : 20.0,
-        "category" : "Toys"
-      }, {
         "productName" : "Monopoly",
         "price" : 30.0,
         "category" : "Board Games"
+      }, {
+        "productName" : "Car",
+        "price" : 20.0,
+        "category" : "Toys"
       } ]
     } ]
   } ]

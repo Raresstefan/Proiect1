@@ -34,10 +34,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 288.1818181818182,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -60,10 +56,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       }, {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
@@ -96,7 +88,7 @@
       "age" : 1,
       "giftsPreferences" : [ "Board Games", "Toys", "Books" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 9.0, 0.0 ],
+      "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 288.1818181818182,
       "receivedGifts" : [ {
         "productName" : "Uno",
@@ -189,10 +181,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 240.7594936708861,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -215,10 +203,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       }, {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
@@ -251,7 +235,7 @@
       "age" : 2,
       "giftsPreferences" : [ "Board Games", "Toys", "Books" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 9.0, 0.0 ],
+      "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 240.7594936708861,
       "receivedGifts" : [ {
         "productName" : "Uno",
@@ -334,10 +318,6 @@
       "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 240.7594936708861,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -355,10 +335,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 22.72727272727273,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -378,10 +354,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 22.72727272727273,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -400,18 +372,6 @@
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Teddy Bear",
-        "price" : 5.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 4,
@@ -427,10 +387,6 @@
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 6,
@@ -440,7 +396,7 @@
       "age" : 3,
       "giftsPreferences" : [ "Board Games", "Toys", "Books" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 9.0, 0.0 ],
+      "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 22.72727272727273,
       "receivedGifts" : [ {
         "productName" : "Uno",
@@ -450,10 +406,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 7,
@@ -485,10 +437,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 22.72727272727273,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -507,11 +455,7 @@
       "averageScore" : 3.0,
       "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 6.818181818181818,
-      "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 11,
       "lastName" : "Ionescu",
@@ -523,10 +467,6 @@
       "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 18.181818181818183,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -567,10 +507,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 247.012987012987,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -593,10 +529,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       }, {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
@@ -629,7 +561,7 @@
       "age" : 4,
       "giftsPreferences" : [ "Board Games", "Toys", "Books" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 9.0, 0.0 ],
+      "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 247.012987012987,
       "receivedGifts" : [ {
         "productName" : "Uno",
@@ -712,10 +644,6 @@
       "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 197.6103896103896,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -756,10 +684,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 250.26315789473685,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -782,10 +706,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       }, {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
@@ -818,7 +738,7 @@
       "age" : 5,
       "giftsPreferences" : [ "Board Games", "Toys", "Books" ],
       "averageScore" : 9.0,
-      "niceScoreHistory" : [ 9.0, 0.0 ],
+      "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 225.23684210526318,
       "receivedGifts" : [ {
         "productName" : "Uno",
@@ -901,10 +821,6 @@
       "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 200.21052631578948,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -945,10 +861,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 250.26315789473685,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -971,10 +883,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       }, {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
@@ -1007,7 +915,7 @@
       "age" : 6,
       "giftsPreferences" : [ "Board Games", "Toys", "Books" ],
       "averageScore" : 9.0,
-      "niceScoreHistory" : [ 9.0, 0.0 ],
+      "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 225.23684210526318,
       "receivedGifts" : [ {
         "productName" : "Uno",
@@ -1090,10 +998,6 @@
       "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 200.21052631578948,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -1134,10 +1038,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 231.9512195121951,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -1160,10 +1060,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
       }, {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
@@ -1196,7 +1092,7 @@
       "age" : 7,
       "giftsPreferences" : [ "Board Games", "Toys", "Books" ],
       "averageScore" : 9.0,
-      "niceScoreHistory" : [ 9.0, 0.0 ],
+      "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 208.7560975609756,
       "receivedGifts" : [ {
         "productName" : "Uno",
@@ -1279,10 +1175,6 @@
       "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 185.5609756097561,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -1349,10 +1241,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
       } ]
     }, {
       "id" : 2,
@@ -1365,10 +1253,6 @@
       "niceScoreHistory" : [ 10.0 ],
       "assignedBudget" : 52.90322580645161,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
@@ -1391,14 +1275,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 4,
@@ -1414,10 +1290,6 @@
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
-      }, {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 6,
@@ -1437,10 +1309,6 @@
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 7,
@@ -1494,11 +1362,7 @@
       "averageScore" : 3.0,
       "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 15.870967741935484,
-      "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 11,
       "lastName" : "Ionescu",
@@ -1510,10 +1374,6 @@
       "niceScoreHistory" : [ 8.0 ],
       "assignedBudget" : 42.32258064516129,
       "receivedGifts" : [ {
-        "productName" : "Laptop",
-        "price" : 500.0,
-        "category" : "Technology"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"
@@ -1529,10 +1389,6 @@
       "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 15.870967741935484,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Uno",
         "price" : 10.0,
         "category" : "Board Games"
@@ -1548,10 +1404,6 @@
       "niceScoreHistory" : [ 3.0 ],
       "assignedBudget" : 15.870967741935484,
       "receivedGifts" : [ {
-        "productName" : "Dress",
-        "price" : 45.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Teddy Bear",
         "price" : 5.0,
         "category" : "Toys"

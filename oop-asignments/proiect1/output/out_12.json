@@ -49,10 +49,6 @@
         "price" : 15.0,
         "category" : "Toys"
       }, {
-        "productName" : "Shoes",
-        "price" : 70.0,
-        "category" : "Clothes"
-      }, {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
         "category" : "Books"
@@ -82,22 +78,14 @@
       "firstName" : "Tudor",
       "city" : "Craiova",
       "age" : 3,
-      "giftsPreferences" : [ "Toys", "Clothes", "Sweets", "Clothes", "Books" ],
+      "giftsPreferences" : [ "Books" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 6.0, 4.0 ],
+      "niceScoreHistory" : [ 6.0 ],
       "assignedBudget" : 134.11764705882354,
       "receivedGifts" : [ {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
         "category" : "Books"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Shoes",
-        "price" : 70.0,
-        "category" : "Clothes"
       } ]
     } ]
   }, {
@@ -149,14 +137,6 @@
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
-      }, {
-        "productName" : "Shoes",
-        "price" : 70.0,
-        "category" : "Clothes"
-      }, {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
       } ]
     }, {
       "id" : 4,
@@ -183,22 +163,14 @@
       "firstName" : "Tudor",
       "city" : "Craiova",
       "age" : 4,
-      "giftsPreferences" : [ "Toys", "Clothes", "Sweets", "Clothes", "Books" ],
+      "giftsPreferences" : [ "Books" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 6.0, 4.0 ],
+      "niceScoreHistory" : [ 6.0 ],
       "assignedBudget" : 108.57142857142858,
       "receivedGifts" : [ {
         "productName" : "Diary of a Wimpy Kid",
         "price" : 25.0,
         "category" : "Books"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Shoes",
-        "price" : 70.0,
-        "category" : "Clothes"
       } ]
     }, {
       "id" : 6,
@@ -284,22 +256,22 @@
       "firstName" : "Tudor",
       "city" : "Craiova",
       "age" : 5,
-      "giftsPreferences" : [ "Toys", "Clothes", "Sweets", "Clothes", "Books" ],
+      "giftsPreferences" : [ "Clothes", "Sweets", "Toys", "Books" ],
       "averageScore" : 5.0,
       "niceScoreHistory" : [ 6.0, 4.0 ],
       "assignedBudget" : 67.05882352941177,
       "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
+        "productName" : "Gummy Bears",
+        "price" : 10.0,
+        "category" : "Sweets"
       }, {
         "productName" : "Castle",
         "price" : 15.0,
         "category" : "Toys"
       }, {
-        "productName" : "Shoes",
-        "price" : 70.0,
-        "category" : "Clothes"
+        "productName" : "Diary of a Wimpy Kid",
+        "price" : 25.0,
+        "category" : "Books"
       } ]
     }, {
       "id" : 6,
@@ -336,11 +308,7 @@
       "averageScore" : 6.0,
       "niceScoreHistory" : [ 6.0 ],
       "assignedBudget" : 0.0,
-      "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 2,
       "lastName" : "Pop",
@@ -351,38 +319,18 @@
       "averageScore" : 9.0,
       "niceScoreHistory" : [ 9.0 ],
       "assignedBudget" : 0.0,
-      "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
-        "productName" : "Shoes",
-        "price" : 70.0,
-        "category" : "Clothes"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 5,
       "lastName" : "Pop",
       "firstName" : "Tudor",
       "city" : "Craiova",
       "age" : 6,
-      "giftsPreferences" : [ "Toys", "Clothes", "Sweets", "Clothes", "Books" ],
+      "giftsPreferences" : [ "Clothes", "Sweets", "Toys", "Books" ],
       "averageScore" : 5.0,
       "niceScoreHistory" : [ 6.0, 4.0 ],
       "assignedBudget" : 0.0,
-      "receivedGifts" : [ {
-        "productName" : "Diary of a Wimpy Kid",
-        "price" : 25.0,
-        "category" : "Books"
-      }, {
-        "productName" : "Castle",
-        "price" : 15.0,
-        "category" : "Toys"
-      }, {
-        "productName" : "Shoes",
-        "price" : 70.0,
-        "category" : "Clothes"
-      } ]
+      "receivedGifts" : [ ]
     }, {
       "id" : 7,
       "lastName" : "Popa",

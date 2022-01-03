@@ -25,9 +25,9 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 4,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Sweets" ],
+      "giftsPreferences" : [ "Board Games", "Sweets" ],
       "averageScore" : 10.0,
-      "niceScoreHistory" : [ 2.0, 0.0 ],
+      "niceScoreHistory" : [ 2.0 ],
       "assignedBudget" : 332.8125,
       "receivedGifts" : [ {
         "productName" : "Uno",
@@ -110,7 +110,7 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 5,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Sweets" ],
+      "giftsPreferences" : [ "Board Games", "Sweets" ],
       "averageScore" : 1.0,
       "niceScoreHistory" : [ 2.0, 0.0 ],
       "assignedBudget" : 46.30434782608695,
@@ -195,18 +195,18 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 6,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Sweets" ],
+      "giftsPreferences" : [ "Sweets", "Board Games" ],
       "averageScore" : 1.0,
       "niceScoreHistory" : [ 2.0, 0.0 ],
       "assignedBudget" : 46.30434782608695,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
+      }, {
+        "productName" : "Uno",
+        "price" : 10.0,
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 2,
@@ -280,18 +280,18 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 7,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Sweets" ],
+      "giftsPreferences" : [ "Sweets", "Board Games" ],
       "averageScore" : 1.0,
       "niceScoreHistory" : [ 2.0, 0.0 ],
       "assignedBudget" : 85.0,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
+      }, {
+        "productName" : "Uno",
+        "price" : 10.0,
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 2,
@@ -350,18 +350,18 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 8,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Sweets" ],
+      "giftsPreferences" : [ "Sweets", "Board Games" ],
       "averageScore" : 1.0,
       "niceScoreHistory" : [ 2.0, 0.0 ],
       "assignedBudget" : 62.25,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
+      }, {
+        "productName" : "Uno",
+        "price" : 10.0,
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 2,
@@ -420,18 +420,18 @@
       "firstName" : "Tudor",
       "city" : "Constanta",
       "age" : 9,
-      "giftsPreferences" : [ "Sweets", "Board Games", "Sweets" ],
+      "giftsPreferences" : [ "Sweets", "Board Games" ],
       "averageScore" : 1.0,
       "niceScoreHistory" : [ 2.0, 0.0 ],
       "assignedBudget" : 50.0,
       "receivedGifts" : [ {
-        "productName" : "Uno",
-        "price" : 10.0,
-        "category" : "Board Games"
-      }, {
         "productName" : "Gummy Bears",
         "price" : 10.0,
         "category" : "Sweets"
+      }, {
+        "productName" : "Uno",
+        "price" : 10.0,
+        "category" : "Board Games"
       } ]
     }, {
       "id" : 2,
