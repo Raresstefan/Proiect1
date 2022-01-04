@@ -23,85 +23,123 @@ public class ChildOutput {
         this.niceScoreHistory = new ArrayList<>();
         this.receivedGifts = new ArrayList<>();
     }
-
-    public void setId(int id) {
+    /**
+     * Setter for the id
+     */
+    public void setId(final int id) {
         this.id = id;
     }
-
-    public void setLastName(String lastName) {
+    /**
+     * Setter for the last name
+     */
+    public void setLastName(final String lastName) {
         this.lastName = lastName;
     }
-
-    public void setFirstName(String firstName) {
+    /**
+     * Setter for the first name
+     */
+    public void setFirstName(final String firstName) {
         this.firstName = firstName;
     }
-
-    public void setAge(int age) {
+    /**
+     * Setter for age
+     */
+    public void setAge(final int age) {
         this.age = age;
     }
-
-    public void setCity(Cities city) {
+    /**
+     * Setter for the city
+     */
+    public void setCity(final Cities city) {
         this.city = city;
     }
-
-    public void setGiftsPreferences(List<Category> giftsPreference) {
+    /**
+     * Setter for the gifts preferences that the child has
+     */
+    public void setGiftsPreferences(final List<Category> giftsPreference) {
         this.giftsPreferences.addAll(giftsPreference);
-//        this.giftsPreferences = giftsPreference;
     }
-
-    public void setNiceScoreHistory(List<Double> niceScoreHistory) {
+    /**
+     * Setter for the list of nice scores of the child
+     */
+    public void setNiceScoreHistory(final List<Double> niceScoreHistory) {
         this.niceScoreHistory.addAll(niceScoreHistory);
-//        this.niceScoreHistory = niceScoreHistory;
     }
-
-    public void setAssignedBudget(Double assignedBudget) {
+    /**
+     * Setter for the budget assigned to the child
+     */
+    public void setAssignedBudget(final Double assignedBudget) {
         this.assignedBudget = assignedBudget;
     }
-
-    public void setReceivedGifts(List<Gift> receivedGifts) {
+    /**
+     * Setter for the list of gifts received by the child
+     */
+    public void setReceivedGifts(final List<Gift> receivedGifts) {
         this.receivedGifts.addAll(receivedGifts);
-//        this.receivedGifts = receivedGifts;
     }
-
-    public void setAverageScore(Double averageScore) {
+    /**
+     * Setter for the average score of the child
+     */
+    public void setAverageScore(final Double averageScore) {
         this.averageScore = averageScore;
     }
+    /**
+     * Getter for the average score
+     */
     public Double getAverageScore() {
         return this.averageScore;
     }
-
+    /**
+     * Getter for the id
+     */
     public int getId() {
         return id;
     }
-
+    /**
+     * Getter for the last name
+     */
     public String getLastName() {
         return lastName;
     }
-
+    /**
+     * Getter for the first name
+     */
     public String getFirstName() {
         return firstName;
     }
-
+    /**
+     * Getter for age
+     */
     public int getAge() {
         return age;
     }
-
+    /**
+     * Getter for the city
+     */
     public Cities getCity() {
         return city;
     }
-
+    /**
+     * Getter for the list of gifts preferences
+     */
     public List<Category> getGiftsPreferences() {
         return giftsPreferences;
     }
-
+    /**
+     * Getter for the list of nice scores of the child
+     */
     public List<Double> getNiceScoreHistory() {
         return niceScoreHistory;
     }
-
+    /**
+     * Getter for the budget assigned to the child
+     */
     public Double getAssignedBudget() {
         return assignedBudget;
     }
-
+    /**
+     * Getter for the list of gifts received by the child
+     */
     public List<Gift> getReceivedGifts() {
         return receivedGifts;
     }

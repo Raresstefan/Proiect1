@@ -9,9 +9,9 @@ public class AnnualChildren {
     public AnnualChildren() {
         this.annualChildren = new ArrayList<>();
     }
-    public void addChildToList(CompleteOutput completeOutput) {
-        this.annualChildren.add(completeOutput);
-    }
+    /**
+     * Getter for the list of annualChildren
+     */
     public List<CompleteOutput> getAnnualChildren() {
         return annualChildren;
     }

@@ -1,8 +1,6 @@
 package main;
 
 import enums.Category;
-import enums.Cities;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -12,42 +10,67 @@ public class SantaClaus {
     private List<ChildInput> children;
     private int budget;
     private List<Gift> gifts;
-    private SantaClaus() {}
+    private SantaClaus() { }
+    /**
+     * Method that initalise the parameters of class
+     * with default values
+     */
     public void initialiseParameters() {
         this.children = new ArrayList<>();
         this.budget = 0;
         this.gifts = new ArrayList<>();
     }
-
-    public void setGifts(List<Gift> gifts) {
+    /**
+     * Setter for the list of gifts
+     */
+    public void setGifts(final List<Gift> gifts) {
         this.gifts = gifts;
     }
-
-    public void setBudget(int budget) {
+    /**
+     * Setter for the budget
+     */
+    public void setBudget(final int budget) {
         this.budget = budget;
     }
-
+    /**
+     * Getter for the budget
+     */
     public int getBudget() {
         return budget;
     }
-
+    /**
+     * Getter for the list of gifts
+     */
     public List<Gift> getGifts() {
         return gifts;
     }
-
-    public Gift searchGiftByPreference(Category category) {
+    /**
+     * Method that returns the first gift of a specific category,
+     * found in the list of gifts
+     * If it's not found it returns null
+     */
+    public Gift searchGiftByPreference(final Category category) {
         for (Gift gift : this.gifts) {
-            if (gift.getCategory().equals(category))
+            if (gift.getCategory().equals(category)) {
                 return gift;
+            }
         }
         return null;
     }
+    /**
+     * Creates an instance of santa Claus -> Singleton
+     */
     public static SantaClaus getInstance() {
-        if(instance == null) {
+        if (instance == null) {
             instance = new SantaClaus();
         }
         return instance;
     }
+    /**
+     * Method that tells if a child of a specified id
+     * exists in the list or not
+     * If not, it returns null
+     */
     public ChildInput childExistsById(final int id) {
         for (ChildInput childInput : this.children) {
             if (childInput.getId() == id) {
@@ -56,11 +79,17 @@ public class SantaClaus {
         }
         return null;
     }
+    /**
+     * Method that adds new gifts to the list
+     */
     public void addNewGifts(final List<Gift> newGifts) {
         for (Gift gift : newGifts) {
             this.gifts.add(gift);
         }
     }
+    /**
+     * Method that applies the necessary updates
+     */
     public void updateChanges(final List<ChildUpdate> updates, final AnnualChanges annualChange) {
         // set the new budget
         setBudget(annualChange.getNewSantaBudget());
@@ -72,11 +101,12 @@ public class SantaClaus {
             }
             // add new gifts
             addNewGifts(annualChange.getNewGifts());
-//            System.out.println(this.budget);
-            // remove all young adults children from the list
-//            removeYoungAdults();
         }
     }
+    /**
+     * Method that sorts the gifts from the list
+     * by their price
+     */
     public void sortGiftsByPrice() {
         int i, j;
         for (i = 0; i < this.gifts.size() - 1; i++) {
@@ -89,15 +119,24 @@ public class SantaClaus {
             }
         }
     }
+    /**
+     * Method that adds a child to the list
+     */
     public void addChildToList(final ChildInput childInput) {
         this.children.add(childInput);
     }
+    /**
+     * Method that assign gifts for children
+     */
     public void allocateGiftsForChildren() {
         sortGiftsByPrice();
         for (ChildInput childInput : this.children) {
             childInput.allocateGiftFromSanta(this);
         }
     }
+    /**
+     * Getter for the list of children
+     */
     public List<ChildInput> getChildren() {
         return children;
     }

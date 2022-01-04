@@ -5,7 +5,12 @@ import enums.AgeCategory;
 import java.util.List;
 
 public class ChildFactory {
-    public static AverageScoreStrategy createChild(final AgeCategory ageCategory, final List<Double> scores) {
+    /**
+     * Method that returns a specific type of child
+     * based on the category received as a parameter
+     */
+    public static AverageScoreStrategy createChild(final AgeCategory ageCategory,
+                                                   final List<Double> scores) {
         switch (ageCategory) {
             case BABY : return new BabyAverageScoreStrategy(scores);
             case KID : return new KidAverageScoreStrategy(scores);

@@ -6,37 +6,40 @@ public class Gift {
     private String productName;
     private Double price;
     private Category category;
-
-    public void setProductName(String productName) {
+    /**
+     * Setter for the name of the product
+     */
+    public void setProductName(final String productName) {
         this.productName = productName;
     }
-
-    public void setPrice(Double price) {
+    /**
+     * Setter for the price
+     */
+    public void setPrice(final Double price) {
         this.price = price;
     }
-
-    public void setCategory(Category category) {
+    /**
+     * Setter for the category of the gift
+     */
+    public void setCategory(final Category category) {
         this.category = category;
     }
-
+    /**
+     * Getter for the name of the product
+     */
     public String getProductName() {
         return productName;
     }
-
+    /**
+     * Getter for the price
+     */
     public Double getPrice() {
         return price;
     }
-
+    /**
+     * Getter for the category of the gift
+     */
     public Category getCategory() {
         return category;
-    }
-
-    @Override
-    public String toString() {
-        return "Gift{" +
-                "productName='" + productName + '\'' +
-                ", price=" + price +
-                ", category=" + category +
-                '}';
     }
 }

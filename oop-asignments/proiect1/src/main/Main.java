@@ -2,7 +2,6 @@ package main;
 
 import checker.Checker;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.databind.DeserializationConfig;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
@@ -22,7 +21,11 @@ public final class Main {
     private Main() {
         ///constructor for checkstyle
     }
-
+    /**
+     * Method used to create a new instane of ChildOutput class
+     * and also sets the parameters with the values taken from
+     * a childInput object
+     */
     public static ChildOutput setChildOutputValues(final ChildInput childInput) {
         ChildOutput childOutput = new ChildOutput();
         childOutput.setAge(childInput.getAge());
@@ -37,7 +40,9 @@ public final class Main {
         childOutput.setNiceScoreHistory(childInput.getScores());
         return childOutput;
     }
-
+    /**
+     * Method that sorts children by their id
+     */
     public static void sortChildrenById(final List<ChildInput> children) {
         int i, j;
         for (i = 0; i < children.size() - 1; i++) {
@@ -48,7 +53,10 @@ public final class Main {
             }
         }
     }
-    public static AgeCategory establishAgeCategory (ChildInput child) {
+    /**
+     * Method that returns the age category of a child based on it's age
+     */
+    public static AgeCategory establishAgeCategory(final ChildInput child) {
         if (child.getAge() < 5) {
             return AgeCategory.BABY;
         }
@@ -63,7 +71,12 @@ public final class Main {
         }
         return null;
     }
-    public static void addChildrenOnList(final List<ChildInput> children, final SantaClaus santaClaus) {
+    /**
+     * Method that adds only the children that are under 18 years old
+     * to the list
+     */
+    public static void addChildrenOnList(final List<ChildInput> children,
+                                         final SantaClaus santaClaus) {
         for (ChildInput child : children) {
             if (child.getAge() <= 18) {
                 santaClaus.addChildToList(child);
@@ -71,7 +84,12 @@ public final class Main {
             }
         }
     }
-    public static void writeOutput(final SantaClaus santaClaus, final AnnualChildren annualChildren, final int i) throws IOException {
+    /**
+     * Method that writes the output in a json file for each input test
+     */
+    public static void writeOutput(final SantaClaus santaClaus,
+                                   final AnnualChildren annualChildren,
+                                   final int i) throws IOException {
         ObjectMapper objectMapperOutput = new ObjectMapper();
         String extension = Integer.toString(i);
         String dirName = new String("output");
@@ -79,12 +97,22 @@ public final class Main {
         if (!(dir.exists())) {
             dir.mkdir();
         }
-        BufferedWriter writer = new BufferedWriter(new FileWriter(Constants.OUTPUT_PATH + extension
+        BufferedWriter writer = new
+                BufferedWriter(new FileWriter(Constants.OUTPUT_PATH
+                +
+                extension
                 + Constants.FILE_EXTENSION));
-        String json = objectMapperOutput.writerWithDefaultPrettyPrinter().writeValueAsString(annualChildren);
+        String json
+                =
+                objectMapperOutput.writerWithDefaultPrettyPrinter().
+                        writeValueAsString(annualChildren);
         writer.write(json);
         writer.close();
     }
+    /**
+     * Method that reads the input from a json file and parse it using
+     * jackson
+     */
     public static InputData readInput(final int i) throws IOException {
         String extension = Integer.toString(i);
         extension = extension + ".json";
@@ -94,15 +122,22 @@ public final class Main {
         prefix = prefix + testString;
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
-        objectMapper.setVisibility(VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
+        objectMapper.setVisibility(VisibilityChecker.
+                Std.defaultInstance().
+                withFieldVisibility(JsonAutoDetect.Visibility.ANY));
         File file = new File(prefix);
         InputData inputData = objectMapper.readValue(file, InputData.class);
         return inputData;
     }
-    public static void calculateBudget(final List<ChildInput> children, final SantaClaus santaClaus) {
+    /**
+     * Method that calculates the budget that can be assigned for each child
+     */
+    public static void calculateBudget(final List<ChildInput> children,
+                                       final SantaClaus santaClaus) {
         Double sumAverageScores = 0.0;
         for (ChildInput childInput : children) {
-            Double averageScore = ChildFactory.createChild(establishAgeCategory(childInput), childInput.getScores()).getAverageScore();
+            Double averageScore = ChildFactory.createChild(establishAgeCategory(childInput),
+                    childInput.getScores()).getAverageScore();
                 childInput.setAverageScore(averageScore);
                 if (averageScore != null) {
                     sumAverageScores += averageScore;
@@ -113,30 +148,38 @@ public final class Main {
             Double budgetAllocated;
             if (childInput.getAverageScore() == null) {
                 budgetAllocated = 0.0;
-            }
-            else {
+            } else {
                 budgetAllocated = childInput.getAverageScore() * budgetUnit;
             }
             childInput.setBudgetAllocated(budgetAllocated);
 
         }
     }
-    public static void addChildrenToOutput(final List<ChildInput> children, final AnnualChildren annualChildren) {
+    /**
+     * Method that adds all the children from a round to the outptut
+     */
+    public static void addChildrenToOutput(final List<ChildInput> children,
+                                           final AnnualChildren annualChildren) {
         CompleteOutput completeOutput = new CompleteOutput();
         for (ChildInput childInput : children) {
             ChildOutput childOutput = setChildOutputValues(childInput);
             completeOutput.addChildOutput(childOutput);
         }
-//        annualChildren.addChildToList(completeOutput);
         annualChildren.getAnnualChildren().add(completeOutput);
     }
+    /**
+     * Increment the ages of all children by 1
+     */
     public static void incrementAges(final List<ChildInput> children) {
         for (ChildInput childInput : children) {
             childInput.incrementAge();
         }
     }
+    /**
+     * Method that removes all the children that are over 18 years old
+     */
     public static void removeYoungAdults(final List<ChildInput> children) {
-        List <ChildInput> childrenToRemove = new ArrayList<>();
+        List<ChildInput> childrenToRemove = new ArrayList<>();
         for (ChildInput childInput : children) {
             if (childInput.getAge() > 18) {
                 childrenToRemove.add(childInput);
@@ -146,7 +189,13 @@ public final class Main {
             children.remove(childInput);
         }
     }
-    public static void changesForEachRound(final List<AnnualChanges> annualChanges, final SantaClaus santaClaus, final AnnualChildren annualChildren, final int numberOfYears) {
+    /**
+     * Function that applies updates and adds a new list of children after each round
+     */
+    public static void changesForEachRound(final List<AnnualChanges> annualChanges,
+                                           final SantaClaus santaClaus,
+                                           final AnnualChildren annualChildren,
+                                           final int numberOfYears) {
         int cnt = 1;
         for (AnnualChanges currAnualChange : annualChanges) {
             if (cnt > numberOfYears) {
@@ -165,11 +214,6 @@ public final class Main {
             // realizeaza modificarile cerute
 
             santaClaus.updateChanges(currAnualChange.getChildrenUpdates(), currAnualChange);
-//            if (i == 7) {
-//                for (CompleteOutput completeOutput : annualChildren.getAnnualChildren()) {
-//                    System.out.println(completeOutput.getChildren().get(0).getNiceScoreHistory());
-//                }
-//            }
             // resorteaza copiii in functie de id
             sortChildrenById(santaClaus.getChildren());
             // recalculeaza averageScoreurile
@@ -203,26 +247,11 @@ public final class Main {
             sortChildrenById(santaClaus.getChildren());
             calculateBudget(santaClaus.getChildren(), santaClaus);
             santaClaus.allocateGiftsForChildren();
-            if (i == 8) {
-                System.out.println(santaClaus.getChildren().get(0).getReceivedGifts());
-            }
             addChildrenToOutput(santaClaus.getChildren(), annualChildren);
-//            if (i == 7) {
-//                for (CompleteOutput completeOutput : annualChildren.getAnnualChildren()) {
-//                    for (ChildOutput childOutput : completeOutput.getChildren()) {
-//                        System.out.println(childOutput.getNiceScoreHistory());
-//                    }
-//                }
-//            }
-            changesForEachRound(inputData.getAnnualChanges(), santaClaus, annualChildren, inputData.getNumberOfYears());
-//            if (i == 7) {
-//                System.out.println("After:");
-//                for (CompleteOutput completeOutput : annualChildren.getAnnualChildren()) {
-//                    for (ChildOutput childOutput : completeOutput.getChildren()) {
-//                        System.out.println(childOutput.getNiceScoreHistory());
-//                    }
-//                }
-//            }
+            changesForEachRound(inputData.getAnnualChanges(),
+                    santaClaus,
+                    annualChildren,
+                    inputData.getNumberOfYears());
             writeOutput(santaClaus, annualChildren, i);
         }
     }
